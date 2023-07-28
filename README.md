@@ -3,6 +3,28 @@
 ## Introduction:
 Docker provides an efficient way to package and distribute applications using containers. In this post, we'll explore the process of writing a Dockerfile to containerize a C# application. We'll cover the essential steps, including building the image, copying the application files, and running the application inside a Docker container.
 
+```mermaid
+%%{
+    init: {
+        'theme':'base',
+        'themeVariables': {
+            'primaryColor': '#BB2528',
+            'primaryTextColor': '#fff',
+            'primaryBorderColor': '#961e20',
+            'lineColor': '#F8B229',
+            'secondaryColor': '#00ade0',
+            'tertiaryColor': '#fff'
+        }
+    }
+}%%
+
+flowchart LR
+    DF("<img src='./images/file.svg' height='24'/> Dockerfile") -->|build| DI("<img src='./images/layers.svg' height='24'/> Image")
+    DI --> |push| IR("<img src='./images/database.svg' height='24'/> Registry")
+    IR -..-> |pull| DI
+    DI --> |run| DC("<img src='./images/box.svg' height='24'/> Container")
+```
+
 ## Prerequisites:
 Before getting started, make sure you have Docker installed on your machine. If it's not installed, then you can download it from [here](https://docs.docker.com/get-docker/).
 
