@@ -3,6 +3,8 @@
 ## Introduction:
 Docker provides an efficient way to package and distribute applications using containers. In this post, we'll explore the process of writing a Dockerfile to containerize a C# application. We'll cover the essential steps, including building the image, copying the application files, and running the application inside a Docker container.
 
+## Concepts
+
 ```mermaid
 %%{
     init: {
